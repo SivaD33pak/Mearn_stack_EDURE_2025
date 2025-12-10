@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Application</title>
+  </head>
+  <body>
+    <fieldset>
+      <center><h1>APPLICATION FOR MEDICAL APPOINTMENT</h1></center>
+      <p>
+        <strong>Note:</strong>Form is to be completed and send atleast five days
+        prior to the appionment date
+      </p>
+      <fieldset>
+        <legend><h2>Personal Details</h2></legend>
+        <form>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your Name"
+          /><br /><br />
+
+          <label for="address">Address:</label>
+          <input
+            type="address"
+            id="address"
+            name="address"
+            placeholder="Enter Your Address"
+          /><br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+          /><br /><br />
+
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter Your Phone No."
+          /><br /><br />
+
+          <label for="iq">IQ:</label>
+          <input
+            type="iq"
+            id="iq"
+            name="iq"
+            placeholder="Enter Your IQ"
+          /><br /><br />
+        </form>
+
+        <h2>Gender:</h2>
+        <form>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <br /><br />
+        </form>
+        <form>
+          <label for="appDate"><strong>Date of Appointment:</strong></label>
+          <input type="date" id="appDate" name="appDate" />
+        </form>
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <h2>Check All That Apply</h2>
+        <form>
+          <input type="checkbox" id="Indian" name="checkbox" value="Indian" />
+          <label for="Indian">I am an Indian Citizen</label><br />
+
+          <input type="checkbox" id="abroad" name="checkbox" value="abroad" />
+          <label for="abroad">Living Abroad</label><br />
+
+          <input type="checkbox" id="50" name="checkbox" value="50" />
+          <label for="50">I am above 50</label><br />
+
+          <input type="checkbox" id="other" name="checkbox" value="other" />
+          <label for="other">Other</label><br /><br />
+        </form>
+      </fieldset>
+      <fieldset>
+        <form>
+          <label for="policies"><strong>Health Card policies</strong></label>
+          <select id="policies" name="policies">
+            <option value="" disabled selected>--Select Anyone--</option>
+            <option value="policy1">Policy 1</option>
+          </select>
+          <label for="departments"><strong>DEPARTMENTS</strong></label>
+          <select id="departments" name="departments">
+            <option value="" disabled selected>--Select Anyone--</option>
+          </select>
+          <br />
+        </form>
+      </fieldset>
+      <fieldset>
+        <legend><h2>Essay Section</h2></legend>
+        <form>
+          <label for="essay"> In 50 words or more explain your condition</label
+          ><br /><br />
+          <textarea
+            id="essay"
+            name="essay"
+            rows="5"
+            cols="30"
+            placeholder="Enter text here"
+          ></textarea
+          ><br /><br />
+          <label for="ref">Please upload contact details for 2 references</label
+          ><br /><br />
+          <textarea
+            id="ref"
+            name="ref"
+            rows="5"
+            cols="30"
+            placeholder="Enter text here"
+          ></textarea
+          ><br /><br />
+        </form>
+        <label for="certificates">Upload Medical certificates here:</label
+        ><button>Choose File</button><label>File Not Chosen</label> <br /><br />
+      </fieldset>
+      <br />
+      <center>
+        <button type="submit">Send Your Application</button>
+      </center>
+    </fieldset>
+  </body>
+</html>

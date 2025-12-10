@@ -1,0 +1,30 @@
+.Subtitle {
+  color: #08b553;
+  font-size: 100px;
+  font: italic bold 40px/30px Georgia, serif;
+}
+p {
+  color: red;
+  font-size: 100px;
+}
+h1 {
+  color: blue;
+  font-size: 200px;
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+div {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#myDiv {
+  transform: rotate(20deg);
+}
+.Text {
+  font-size: 30px;
+  color: green;
+}

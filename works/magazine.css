@@ -1,0 +1,60 @@
+.heading {
+  background-color: rgb(216, 216, 216);
+  padding-top: 10px;
+}
+.main_heading {
+  color: rgb(16, 152, 173);
+  font-size: 50px;
+  font-weight: bold;
+  align-items: center;
+}
+.sub_heading {
+  color: rgb(16, 152, 173);
+  font-size: 30px;
+  font-weight: bold;
+}
+.italic_text {
+  font-style: italic;
+}
+.bold_text {
+  font-weight: bold;
+}
+.related {
+  border-top: 5px solid rgb(16, 152, 173);
+  border-bottom: 5px solid rgb(16, 152, 173);
+  background-color: rgb(234, 234, 234);
+}
+.color_text_bold {
+  color: rgb(16, 152, 173);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.color_text_italic {
+  color: rgb(16, 152, 173);
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: none;
+}
+.color_text {
+  color: rgb(16, 152, 173);
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav_bar a {
+  text-decoration: none;
+  margin: 30px;
+  color: rgb(16, 152, 173);
+  font-size: 20px;
+}
+.links {
+  text-decoration: none;
+  color: rgb(16, 152, 173);
+}
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
