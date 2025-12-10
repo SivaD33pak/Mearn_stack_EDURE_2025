@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        background-color: #c7f1c4;
+        border: 5px solid green;
+        width: 1200px;
+        height: 700px;
+        /* margin: 50px auto; */
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .Box1 {
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: lightblue;
+        border: 5px solid blue;
+        width: 1170px;
+        height: 150px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .Box11 {
+        background-color: #fcd9b9;
+        border: 5px solid #f97f76;
+        width: 340px;
+        height: 100px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .Box111 {
+        background-color: #fac0cc;
+        border: 5px solid #f30105;
+        width: 155px;
+        height: 80px;
+      }
+      .Box2 {
+        margin-left: 6px;
+        margin-top: 10px;
+        background-color: #b61b1800;
+        width: 1170px;
+        height: 300px;
+        gap: 10px;
+        justify-content: left;
+        display: flex;
+      }
+      .Box21 {
+        background-color: #f9bcbb;
+        border: 5px solid #ac292d;
+        width: 580px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .Box22 {
+        background-color: #f9bcbb00;
+        width: 580px;
+        height: 300px;
+      }
+      .Box221 {
+        background-color: #fcd9b9;
+        border: 5px solid #f97f76;
+        width: 580px;
+        height: 139px;
+      }
+      .Box222 {
+        background-color: #fcd9b9;
+        border: 5px solid #f97f76;
+        width: 580px;
+        height: 139px;
+        margin-top: 12px;
+      }
+      .Box3 {
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: lightblue;
+        border: 5px solid blue;
+        width: 1170px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .Box31 {
+        background-color: #e2deff;
+        border: 5px solid #6c59cf;
+        width: 370px;
+        height: 100px;
+        margin: 10px;
+      }
+      .Box32 {
+        background-color: #fcd9b9;
+        border: 5px solid #f97f76;
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Example</h1>
+    <div class="parent">
+      <div class="child Box1">
+        <div class="Box11"></div>
+        <div class="Box11">
+          <div class="Box111"></div>
+          <div class="Box111"></div>
+        </div>
+        <div class="Box11"></div>
+      </div>
+      <div class="child Box2">
+        <div class="Box21"></div>
+        <div class="Box22">
+          <div class="Box221"></div>
+          <div class="Box222"></div>
+        </div>
+      </div>
+      <div class="child Box3">
+        <div class="Box31"></div>
+        <div class="Box32"></div>
+        <div class="Box32"></div>
+        <div class="Box31"></div>
+      </div>
+    </div>
+  </body>
+</html>
