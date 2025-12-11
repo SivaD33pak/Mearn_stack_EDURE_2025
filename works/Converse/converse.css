@@ -1,0 +1,40 @@
+.parent {
+  border: 5px solid rgb(0, 0, 0);
+  width: 700px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.head {
+  background-color: lightgray;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Calibri;
+}
+.horizontal {
+  background-color: rgba(255, 255, 0, 0);
+  height: 200px;
+  display: flex;
+  flex-direction: center;
+  align-items: left;
+}
+.info {
+  width: 300px;
+  padding-left: 10px;
+  font-family: Calibri;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.details {
+  width: 300px;
+  padding-left: 10px;
+  font-family: Calibri;
+  font-size: 12px;
+}
+.color {
+  margin-top: 10px;
+  width: 100%;
+}
