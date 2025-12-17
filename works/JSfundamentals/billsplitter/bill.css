@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #724fa6;
+}
+#box {
+  width: 500px;
+  height: 700px;
+  border: 2px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  gap: 30px;
+  font-size: 30px;
+  margin-top: 300px;
+}
+#Bill {
+  width: 400px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 25px;
+}
+#num {
+  width: 400px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 25px;
+}
+#calc {
+  width: 400px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: #724fa6;
+  color: white;
+  cursor: pointer;
+}
+
+#reset {
+  width: 400px;
+  height: 50px;
+  border: 2px solid #724fa6;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: #f4f4f4;
+  color: #724fa6;
+  cursor: pointer;
+}
+#billamt,
+#numlabel {
+  margin-left: -150px;
+}
+#result {
+  margin-top: -20px;
+  color: green;
+  font-size: 25px;
+}
