@@ -1,0 +1,234 @@
+/* Base Styling */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background-color: #f3f4f6;
+}
+
+.app-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #4f46e5;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4338ca;
+}
+
+/* Expense Section */
+.expense-list h2 {
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.expense-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Expense Card */
+.expense-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.expense-card:hover {
+  transform: scale(1.02);
+}
+
+/* Card Header */
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.expense-card h3 {
+  margin: 0;
+  color: #111827;
+}
+
+/* Expense Info */
+.amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #10b981;
+  margin: 0.4rem 0;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Category Tag */
+.tag {
+  display: inline-block;
+  margin-top: 0.6rem;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Action Buttons */
+.icon-buttons,
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #6b7280;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #111827;
+  transform: scale(1.2);
+}
+
+/* Empty State */
+.no-expense {
+  text-align: center;
+  font-style: italic;
+  color: #9ca3af;
+}
+
+.expense-form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: auto;
+
+  animation: fadeInPop 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transform: scale(0.95) translateY(30px);
+  opacity: 0;
+}
+
+/* ===== Controls Wrapper (Flexbox instead of Grid) ===== */
+.new-expense__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Each control takes 50% width */
+.new-expense__control {
+  width: 286px;
+}
+
+/* Labels */
+.new-expense__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #333;
+}
+
+/* Inputs & Select */
+.new-expense__control input,
+.new-expense__control select {
+  font: inherit;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+/* ===== Action Buttons ===== */
+.new-expense__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.submit-btn,
+.cancel-btn {
+  padding: 0.6rem 1.2rem;
+  font: inherit;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #ccc;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeInPop {
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== Responsive (Mobile) ===== */
+@media (max-width: 600px) {
+  .new-expense__control {
+    width: 100%;
+  }
+}
